@@ -11,37 +11,39 @@ struct BinaryTreeNode
 	string data;
 	BinaryTreeNode* leftChild = NULL;
 	BinaryTreeNode* rightChild = NULL;
-};
+}; 
 
 class BinaryTree
 {
 private:
-	BinaryTreeNode* root = nullptr;
+	BinaryTreeNode* root = new BinaryTreeNode();
 
 
 public:
 
 	BinaryTree()
 	{
-		root = NULL;
+		string user_input;  //problem 
 		begin(root);
 	}
 	void begin(BinaryTreeNode* tree);
 	void win();
 	void lose(BinaryTreeNode* tree, BinaryTreeNode* tree_2);
-
-};
+	
+};    
 void BinaryTree::begin(BinaryTreeNode* tree)
 {
-	string input_1, input_2, input_3;
-	if (tree == NULL)
-	{
-		cout << tree->data << " ";
-		getline(cin, input_1);
 
-	}
+	string input_1, input_2, input_3; 
 	if (input_1 == "No" || input_1 == "no")
 	{
+		if (tree != NULL)
+		{
+			cout << tree->data << " ";
+			getline(cin, input_1);
+
+		}
+
 		if (tree->rightChild != NULL)
 		{
 			if (tree->rightChild->leftChild == NULL && tree->rightChild->rightChild == NULL)
@@ -69,7 +71,7 @@ void BinaryTree::begin(BinaryTreeNode* tree)
 		}
 	}
 
-	if (tree->leftChild != nullptr)
+	if (tree->leftChild != NULL)                 
 	{
 		if (tree->leftChild->leftChild != NULL)
 		{
