@@ -125,8 +125,10 @@ void BinaryTree::lose(BinaryTreeNode* tree, BinaryTreeNode* tree_2)
 
 	BinaryTreeNode* Node1 = new BinaryTreeNode;
 	BinaryTreeNode* Node2 = new BinaryTreeNode;
-	if (root == NULL)
+
+	if ( root->leftChild == NULL && root->rightChild == NULL)
 	{
+		
 		cout << "Something I should know???" << endl;
 		cout << "Think and enter a place, person, or an object! ";
 		getline(cin, answer);
@@ -139,18 +141,19 @@ void BinaryTree::lose(BinaryTreeNode* tree, BinaryTreeNode* tree_2)
 		getline(cin, answer);
 
 	}
-	if (tree != NULL)
+	if (tree_2->leftChild == NULL)
 	{
-		cout << "Write a question that only describes a/an " << answer << "from " << tree_2->leftChild->data << " .";
-
+		tree_2->leftChild->data = answer;
+		cout << "Write a question that only describes a/an " << answer; //<< "from " << tree_2->leftChild->data << " .";
+		getline(cin, question);
 	}
 	else if (root != NULL)
 	{
 		if (tree_2->leftChild != NULL)
 		{
-			if (tree_2->leftChild->leftChild == NULL)
+			if (tree_2->leftChild  /*->leftChild*/ == NULL)
 			{
-				cout << "Write a question that only describes a/an " << answer << "from " << tree_2->leftChild->data << " .";
+				cout << "Write a question that only describes a/an " << answer << "from "<< tree_2->leftChild->data << " .";
 
 			}
 		}
