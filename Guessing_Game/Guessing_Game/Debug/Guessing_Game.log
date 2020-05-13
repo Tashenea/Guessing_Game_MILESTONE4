@@ -1,2 +1,8 @@
 ﻿  Source.cpp
+C:\Users\tmb15\Desktop\bin\Guessing_Game_MILESTONE4\Guessing_Game\Guessing_Game\Functions.h(11,15): warning C4018: '>': signed/unsigned mismatch
+C:\Users\tmb15\Desktop\bin\Guessing_Game_MILESTONE4\Guessing_Game\Guessing_Game\Functions.h(103,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\tmb15\Desktop\bin\Guessing_Game_MILESTONE4\Guessing_Game\Guessing_Game\Functions.h(111,20): warning C4018: '>': signed/unsigned mismatch
+C:\Users\tmb15\Desktop\bin\Guessing_Game_MILESTONE4\Guessing_Game\Guessing_Game\Constructor.h(19,8): warning C4018: '<': signed/unsigned mismatch
+C:\Users\tmb15\Desktop\bin\Guessing_Game_MILESTONE4\Guessing_Game\Guessing_Game\Source.cpp(42,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\tmb15\Desktop\bin\Guessing_Game_MILESTONE4\Guessing_Game\Guessing_Game\Source.cpp(46,17): warning C4018: '<': signed/unsigned mismatch
   Guessing_Game.vcxproj -> C:\Users\tmb15\Desktop\bin\Guessing_Game_MILESTONE4\Guessing_Game\Debug\Guessing_Game.exe
